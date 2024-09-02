@@ -4,6 +4,7 @@ import React, {
   useImperativeHandle,
   useRef,
 } from "react";
+import { createPortal } from "react-dom";
 
 const ResultModal = forwardRef(function ResultModal(
   { targetTime, result, timeRemaining, handleReset },
@@ -18,9 +19,9 @@ const ResultModal = forwardRef(function ResultModal(
     : 0;
 
   // Randomize score between 40 and 80 (KECURANGNAN BANDAR)
-  if (score > 80) {
-    score = Math.floor(Math.random() * (70 - 40 + 1)) + 40;
-  }
+  // if (score > 80) {
+  //   score = Math.floor(Math.random() * (70 - 40 + 1)) + 40;
+  // }
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -50,7 +51,7 @@ const ResultModal = forwardRef(function ResultModal(
     </>
   );
 
-  return (
+  return createPortal(
     <dialog
       ref={dialogRef}
       className="text-start p-2 rounded-lg animate-slideDown"
@@ -74,7 +75,8 @@ const ResultModal = forwardRef(function ResultModal(
           Close
         </button>
       </form>
-    </dialog>
+    </dialog>,
+    document.getElementById("modal")
   );
 });
 
