@@ -1,8 +1,3 @@
-# React + Vite
+# Coundown Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Guess the End Time is an interactive and fun game where users test their timing skills by trying to stop a timer as close as possible to a preselected target time. The goal is to challenge your perception of time and accuracy by guessing the exact moment to stop the countdown. The game is simple yet engaging, suitable for all ages and can be enjoyed in short bursts. Users are scored based on how close their guess is to the selected end time, with different difficulty levels available for those seeking a greater challenge. Whether you're competing against yourself or with friends, Guess the End Time provides endless fun and an exciting way to improve your timing and concentration!
